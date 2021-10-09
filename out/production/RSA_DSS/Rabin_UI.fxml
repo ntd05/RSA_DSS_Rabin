@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" style="-fx-background-color: #ffc7fd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerRabin">
+   <children>
+      <TextField fx:id="p_text" layoutX="158.0" layoutY="26.0" prefHeight="39.0" prefWidth="329.0" />
+      <Label layoutX="55.0" layoutY="37.0" prefHeight="17.0" prefWidth="84.0" text="Nhập p" />
+      <Label layoutX="55.0" layoutY="100.0" prefHeight="17.0" prefWidth="84.0" text="Nhập q" />
+      <TextField fx:id="q_text" layoutX="158.0" layoutY="89.0" prefHeight="39.0" prefWidth="329.0" />
+      <Label layoutX="55.0" layoutY="159.0" prefHeight="17.0" prefWidth="95.0" text="Nhập bản rõ M" />
+      <TextField fx:id="m_text" layoutX="158.0" layoutY="148.0" prefHeight="39.0" prefWidth="329.0" />
+      <Label layoutX="24.0" layoutY="257.0" prefHeight="17.0" prefWidth="95.0" text="Khóa công khai :" />
+      <Label layoutX="329.0" layoutY="257.0" prefHeight="17.0" prefWidth="73.0" text="Khóa bí mật" />
+      <Button fx:id="Mh" layoutX="276.0" layoutY="204.0" mnemonicParsing="false" onAction="#MH" prefHeight="39.0" prefWidth="73.0" text="Mã hóa" />
+      <Label fx:id="private_key" layoutX="411.0" layoutY="246.0" prefHeight="39.0" prefWidth="166.0" textFill="#bf0808">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="public_key" layoutX="119.0" layoutY="246.0" prefHeight="39.0" prefWidth="166.0" textFill="#bf0808">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="303.0" prefHeight="17.0" prefWidth="95.0" text="Bản mã" />
+      <TextField fx:id="c_text" layoutX="158.0" layoutY="292.0" prefHeight="39.0" prefWidth="329.0" />
+      <Button fx:id="Gm" layoutX="276.0" layoutY="357.0" mnemonicParsing="false" onAction="#GM" prefHeight="39.0" prefWidth="73.0" text="Giải mã" />
+      <TextField fx:id="M1_text" layoutX="104.0" layoutY="406.0" prefHeight="39.0" prefWidth="172.0" />
+      <Label layoutX="40.0" layoutY="417.0" prefHeight="17.0" prefWidth="95.0" text="Bản rõ m1" />
+      <Label layoutX="40.0" layoutY="472.0" prefHeight="17.0" prefWidth="95.0" text="Bản rõ m3" />
+      <TextField fx:id="M3_text" layoutX="104.0" layoutY="461.0" prefHeight="39.0" prefWidth="172.0" />
+      <Label layoutX="313.0" layoutY="417.0" prefHeight="17.0" prefWidth="95.0" text="Bản rõ m2" />
+      <TextField fx:id="M2_text" layoutX="377.0" layoutY="406.0" prefHeight="39.0" prefWidth="172.0" />
+      <Label layoutX="313.0" layoutY="472.0" prefHeight="17.0" prefWidth="95.0" text="Bản rõ m4" />
+      <TextField fx:id="M4_text" layoutX="377.0" layoutY="461.0" prefHeight="39.0" prefWidth="172.0" />
+      <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="12.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="4.0" layoutY="2.0" mnemonicParsing="false" onAction="#Back" opacity="0.0" text="Back" />
+   </children>
+</AnchorPane>
